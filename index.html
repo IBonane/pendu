@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Du Pendu</title>
+    <link rel="stylesheet" href="./assets/styles/resetPaddingMargin.css">
+    <link rel="stylesheet" href="./assets/styles/mainStyle.css">  
+</head>
+
+<body>
+    <div id="title">
+        <h2>Jeu du Pendu</h2>
+    </div>
+    <br><br>
+    <div id="presentation">
+        <p>
+            <strong>Le Pendu</strong> est un jeu consistant à trouver un mot 
+            en devinant quelles sont les lettres qui le composent.
+            Le but du jeu est simple : deviner toute les lettres qui doivent composer un mot,
+            éventuellement avec un nombre limité de tentatives. 
+            A chaque fois que le joueur devine une lettre, celle-ci est affichée. 
+            Dans le cas contraire, le dessin d’un pendu se met à apparaître.
+        </p>
+    </div>
+    <br>
+    <div class="gridItems"><img src="./assets/images/bonhomme.jpg" alt="images pendu"></div>
+    <br>
+    <div class="gridItems lastDiv">
+        <div class="versPageJeu">
+            <h4>Mode utilisateur :</h4>
+            <p>
+                Dans ce mode, l'utilisateur doit 
+                deviner un mot que l'ordinateur propose.
+            </p>
+            <a href="./templates/penduModeHumain.html"><button>Jouer</button></a>
+        </div>
+
+        <div class="versPageJeu">
+            <h4>Mode Ordinateur : </h4>
+            <p>
+                Dans ce mode l'utilisateur propose un 
+                mot et l'ordinateur essaie de le divinez.
+            </p>
+            <a href="./templates/penduModeOrdi.html"><button>Jouer</button></a> 
+        </div>
+    </div>
+</body>
+<footer class="footPage">Copyright Inoussa Bonane A.K.A Djimbalinux <a href="https://github.com/IBonane" target="_blank" rel="noopener noreferrer">Github</a></footer>
+</html>

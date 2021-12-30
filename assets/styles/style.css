@@ -1,0 +1,126 @@
+:root{
+    --color-head-table1: rgb(17, 134, 235);
+    --color-head-table: #ffffff;
+}
+
+body{
+    background-color: floralwhite;
+    font-size: 20px;
+}
+
+/*lien accueil*/
+.accueil{
+    width: 20%; 
+    background-color: rgb(255, 145, 0); 
+    color: white;
+    text-align: center;
+}
+.accueil a{
+    color: white;
+    font-weight: bold; 
+    text-decoration: none;
+}
+
+/*tous les div ayant pour class divgrid*/
+.divgrid{
+    max-width: 2000px;
+    display: grid;
+    justify-content: center;
+}
+/*nameWinnerInput*/
+#nameWinnerInput{
+    margin-top: 25px;
+    width: 250px; 
+    height: 50px;
+    text-align: center;
+}
+/*le mot caché : hiddenWord*/
+#play{
+    width: 200px;
+    height: 50px;
+    background-color: var(--color-head-table1);
+    border: 2px solid var(--color-head-table1);
+    border-radius: 15px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#play:hover{
+    background-color: white; 
+    color: var(--color-head-table1);
+    border: 1px solid var(--color-head-table1);
+}
+
+/*image du pendu*/
+.imagePendu{
+    width: 200px; 
+    height: 250px; 
+    background-color: white;
+    border: 1px solid black;
+}
+
+.winImg{
+    width: 150;
+    height: 200px;
+}
+
+/*Message de victoire ou defaites*/
+#centerMsg{
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
+#centerMsg span{
+    color: red;
+}
+
+/*les touches alphabetiques du jeu [A...Z]*/
+#toucheAlphabet{
+    width: 52%;
+    margin-left: 26%;
+}
+#toucheAlphabet button{
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-head-table1);
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+}
+
+#toucheAlphabet button:hover{
+    background-color: white;
+    color: var(--color-head-table1);
+    border: 1px solid var(--color-head-table1);
+    cursor: pointer;
+}
+/*Tableau des meilleurs vainqueurs*/
+#tableBestWin{
+    background-color: orange;
+    border: 1px solid white;
+}
+#tableBestWin thead tr{
+    background-color: var(--color-head-table1);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+#tableBestWin th, td{
+    padding: 10px 15px;
+    text-align: center;
+  }
+  
+#tableBestWin tbody tr{
+    border-bottom: 1px solid #ddd;
+}
+  
+#tableBestWin tbody tr:nth-last-of-type(even){
+    background-color: #f5f5f58f;
+}
+  
+#tableBestWin tbody tr:last-of-type{
+    border-bottom: 2px solid var(--color-head-table);
+}
